@@ -1,0 +1,29 @@
+#VisualizingCancer{
+    color: rgb(12, 145, 72);
+
+}
+ul {
+    list-style-type: none;
+   
+    padding: 0;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    border-radius: 10px;    
+  }
+  li {
+    float: inline-start;
+  }
+  li a {
+    display: block;
+    color: rgb(90, 89, 89);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  #VisualizingCancer{
+    margin-top: 0.7cm;
+    margin-left: 0.5cm;
+    margin-right: 2cm;
+  }
+  li a:hover {
+  }
