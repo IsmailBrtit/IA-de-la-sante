@@ -22,8 +22,13 @@ ul {
   }
   #VisualizingCancer{
     margin-top: 0.7cm;
-    margin-left: 0.5cm;
-    margin-right: 2cm;
+    margin-left: 1cm;
+    margin-right: 5cm;
+  }
+
+  .bar{
+
+    font-family:"Open Sans",Sans-serif	 ;
   }
   li a:hover {
   }
