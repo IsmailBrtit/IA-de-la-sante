@@ -1,18 +1,32 @@
-#VisualizingCancer{
-    color: rgb(12, 145, 72);
 
+body {
+  margin: 0;
+  padding: 0;
 }
-ul {
+
+#home{
+  background-color:rgb(12, 145, 72);
+  background-attachment: scroll;
+  background-position: top;
+  height: 15cm;
+  background-size:cover ;
+  padding-top: 1cm;
+}
+ .menu{
     list-style-type: none;
-   
     padding: 0;
     overflow: hidden;
     background-color: #f2f2f2;
-    border-radius: 10px;    
+    border-radius: 10px;  
+    margin-left: 1cm;
+    margin-right: 2cm;  
+    padding-top: 2px;
   }
+  
   li {
     float: inline-start;
   }
+  
   li a {
     display: block;
     color: rgb(90, 89, 89);
@@ -24,11 +38,23 @@ ul {
     margin-top: 0.7cm;
     margin-left: 1cm;
     margin-right: 5cm;
+    color: rgb(12, 145, 72);
+
+  }
+  .hero-title{
+    text-align: center;
+    margin-top: 5cm;
+    color: white;
   }
 
   .bar{
 
-    font-family:"Open Sans",Sans-serif	 ;
+    font-family:"Open Sans",Sans-serif ;
   }
   li a:hover {
   }
+h1.hero-title{
+  font-family: "Montserrat",sans-serif;
+  line-height: 1.5;
+   
+}
