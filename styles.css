@@ -42,16 +42,23 @@ body {
   }
   .hero-title{
     text-align: center;
-    margin-top: 5cm;
+    margin-top: 4cm;
     color: white;
   }
+  .under-hero-title{
+    color: white;
+    text-align: center;
+    font-family:"Open Sans",Sans-serif ;
 
+  }
+  .menu .bar a:hover {
+    color: green;
+  }
   .bar{
 
     font-family:"Open Sans",Sans-serif ;
   }
-  li a:hover {
-  }
+  
 h1.hero-title{
   font-family: "Montserrat",sans-serif;
   line-height: 1.5;
