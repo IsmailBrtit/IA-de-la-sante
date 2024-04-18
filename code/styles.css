@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 1500px;
+  background-color: rgba(245, 245, 245, 1);
+
+}
+
+#home{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url('img/1700736689304.jpeg');
+  background-attachment: fixed;
+  background-position: top;
+  height: 20cm;
+  background-size:cover ;
+  padding-top: 1cm;
+}
+ .menu{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;  
+    margin-left: 1cm;
+    margin-right: 2cm;  
+    padding-top: 2px;
+    font-family:"Open Sans",Sans-serif ;
+
+  }
+  
+  li {
+    float: inline-start;
+  }
+  
+  li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  #VisualizingCancer{
+    margin-top: 0.7cm;
+    margin-left: 1cm;
+    margin-right: 4cm;
+    color: rgb(242, 2, 2 );
+    font-family:"Open Sans",Sans-serif ;
+    font-size: 230%;
+  }
+  .menu .bar a:hover {
+    color: rgb(242, 2, 2 );
+  }
+
+  .bar{
+    font-family:"Open Sans",Sans-serif ;
+  }
+  
+  .hero-title {
+    text-align: center;
+    margin-top: 4cm;
+    color: white;
+
+  }
+  .hero-title h1{
+    font-size: 350%;
+    font-family:"Open Sans",Sans-serif ;
+
+  }
+  .hero-title h3{
+    font-family:"Open Sans",Sans-serif ;
+    font-size: 150%;
+  }
+  .underline {
+    width: 90px; 
+    height: 4px; 
+    background-color: red; 
+    margin: 10px auto; 
+    border-radius: 5px; }
+
+  #txt1{
+    margin-top: 1.3cm;
+    font-size: 140%;
+    font-family: "Roboto", sans-serif;
+    color: rgba(64, 64, 64, 1);
+    text-align: center;
+
+  }
+  .txt2{
+    font-family:"Open Sans",Sans-serif ;
+    font-size:140%;
+    text-align: center;
+    margin-top: 5cm;
+    color: rgba(2, 1, 1, 1);
+    
+    }
+    .element-left{
+    
+    }
+    .element-right{
+
+    }
+
+  #img1{
+  width: 500px;
+  height: 270px;
+  float: left;
+  margin-right: 20px;
+  }
+
+  #TxtImg1{
+  margin-top: 8cm;
+  margin-left: 2cm;
+  font-size: 150%;
+  color: #626567;
+  }
+
