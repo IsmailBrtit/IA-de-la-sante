@@ -7,7 +7,7 @@ body {
 }
 
 #home{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url('img/1700736689304.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url('../img/gty_231012_medical_records_database_800x450.avif');
   background-attachment: fixed;
   background-position: top;
   height: 20cm;
@@ -92,12 +92,35 @@ body {
     color: rgba(2, 1, 1, 1);
     
     }
-    .element-left{
-    
-    }
-    .element-right{
+    .element1-left,.element1-right{
+      display: inline-block;
+      vertical-align: top; 
+      margin-top: 60px;
+
+        }
+ 
+    .element1-left {
+      margin-left: 4cm;
+      
 
     }
+
+    
+    .element1-right {
+      margin-right: 3cm;
+      margin-left: 50px;
+    }
+  .element1 h3 {
+    font-family:"Open Sans",Sans-serif ;
+    text-align: center;
+    margin-top: 50px;
+
+    
+  }
+
+
+
+
 
   #img1{
   width: 500px;
