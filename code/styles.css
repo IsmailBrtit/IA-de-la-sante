@@ -1,80 +1,16 @@
-body {
-  margin: 0;
-  padding: 0;
-  height: 1500px;
-  background-color: rgba(245, 245, 245, 1);
 
-}
 
 #home{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url('../img/gty_231012_medical_records_database_800x450.avif');
-  background-attachment: fixed;
-  background-position: top;
-  height: 20cm;
-  background-size:cover ;
-  padding-top: 1cm;
+ 
 }
- .menu{
-    list-style-type: none;
-    padding: 0;
-    overflow: hidden;
-    border-radius: 10px;  
-    margin-left: 1cm;
-    margin-right: 2cm;  
-    padding-top: 2px;
-    font-family:"Open Sans",Sans-serif ;
-
-  }
-  
-  li {
-    float: inline-start;
-  }
-  
-  li a {
-    display: block;
-    color:white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-  }
-
-  #VisualizingCancer{
-    margin-top: 0.7cm;
-    margin-left: 1cm;
-    margin-right: 4cm;
-    color: rgb(242, 2, 2 );
-    font-family:"Open Sans",Sans-serif ;
-    font-size: 230%;
-  }
-  .menu .bar a:hover {
-    color: rgb(242, 2, 2 );
-  }
-
-  .bar{
-    font-family:"Open Sans",Sans-serif ;
-  }
-  
-  .hero-title {
-    text-align: center;
-    margin-top: 4cm;
-    color: white;
-
-  }
-  .hero-title h1{
-    font-size: 350%;
-    font-family:"Open Sans",Sans-serif ;
-
-  }
-  .hero-title h3{
-    font-family:"Open Sans",Sans-serif ;
-    font-size: 150%;
-  }
-  .underline {
-    width: 90px; 
-    height: 4px; 
-    background-color: red; 
+ 
+  .underline{
     margin: 10px auto; 
-    border-radius: 5px; }
+
+  }
+
+
 
   #txt1{
     margin-top: 1.3cm;
@@ -84,7 +20,7 @@ body {
     text-align: center;
 
   }
-  .txt2{
+  .txt2 ,.element2 {
     font-family:"Open Sans",Sans-serif ;
     font-size:140%;
     text-align: center;
@@ -101,8 +37,6 @@ body {
  
     .element1-left {
       margin-left: 4cm;
-      
-
     }
 
     
@@ -114,25 +48,52 @@ body {
     font-family:"Open Sans",Sans-serif ;
     text-align: center;
     margin-top: 50px;
-
-    
   }
+  .element1 h5,.element2 h5{
+    font-family:"Open Sans",Sans-serif ;
+    color: #696b6d;
+    line-height: 1.8;
+    font-size:90%;
 
-
-
-
-
-  #img1{
-  width: 500px;
-  height: 270px;
-  float: left;
-  margin-right: 20px;
   }
+.element1 button{ 
+  background-color:#F32144;
+  border-radius: 15px;
+  border: white;
+  height: 35px;
+  width: 150px;
+  margin-left: 200px;
+  color: white  ;
+  font-family:"Roboto",Sans-serif ;
+  font-size:100%;
+  font-weight: 270;
+} 
+.element1 button:hover{
+  background-color: #C91432;
+}
+.element2{
+  margin-left: 100px;
+}
+.underline2 {
+  width: 90px; 
+  height: 4px; 
+  background-color: red; 
+  margin: 10px auto; 
+  border-radius: 5px;
+  float: inline-start;
+ }
+.element2 img{
+  float: right;
+  margin-right: 160px;
+  border-radius: 20px;
+}
 
-  #TxtImg1{
-  margin-top: 8cm;
-  margin-left: 2cm;
-  font-size: 150%;
-  color: #626567;
-  }
+footer{
+  margin-top: 10px;
+  background-color: #000000;
+  color: white;
+  height: 150px;
+  opacity: 0.9;
+  text-align: center  ;
+}
 
