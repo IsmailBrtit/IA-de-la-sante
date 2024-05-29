@@ -42,7 +42,7 @@
     
     .element1-right {
       margin-right: 3cm;
-      margin-left: 50px;
+      margin-left: 70px;
     }
   .element1 h3 {
     font-family:"Open Sans",Sans-serif ;
@@ -62,12 +62,54 @@
   border: white;
   height: 35px;
   width: 150px;
-  margin-left: 200px;
   color: white  ;
   font-family:"Roboto",Sans-serif ;
   font-size:100%;
   font-weight: 270;
+  cursor: pointer;
 } 
+.element1-right button{
+  margin-left: 180px;
+}
+.element1-left button{
+  margin-left: 160px;
+ 
+}
+/* here*/
+.extra {
+  display: none;
+  margin-top: 0px;
+}
+.dots{
+  display: inline;
+}
+input[type="checkbox"] {
+  display: block;
+  appearance: none;
+}
+
+label {
+  border-radius: 15px;
+  position: relative;
+  padding: 12px;
+  font-family:"Roboto",Sans-serif ;
+  margin-top: 0px;
+  background-color: #F32144;
+  color: white;
+  cursor: pointer;
+  margin-left: 160px;
+}
+label:hover{
+  background-color: #C91432;
+}
+label:before {
+  content: "Read more";
+}
+input[type="checkbox"]:checked ~ label:before {
+  content: "Read less";
+}
+/* here*/
+
 .element1 button:hover{
   background-color: #C91432;
 }
