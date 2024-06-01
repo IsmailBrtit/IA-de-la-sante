@@ -1,0 +1,66 @@
+/* Set background image for the form */
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url('../static/img/mice_640_410.jpg');
+}
+.hero-title .underline{
+  margin: 10px auto; 
+}
+form{
+  margin-top: 70px;
+  padding-top: 20px;
+  padding-left: 29px;
+  padding-bottom: 30px;
+  margin-left: 7.5%;
+  margin-right: 10%;
+  width: 85%;
+  font-family:"Poppins",Sans-serif ;
+  background-color: white;
+  border-radius: 19px;
+
+
+}
+/* Style form elements */
+.form-group {
+  padding-top: 20px;
+  margin-bottom: 33px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* Style the button */
+.btn {
+  display: block;
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 20%;
+  padding: 10px;
+  background-color:#F32144;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:#ca1937 ;
+}
+
+/* Style the prediction text */
+.prediction-text {
+  margin-top: 20px;
+  font-weight: bold;
+}
