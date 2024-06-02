@@ -32,7 +32,7 @@
         <h1>We're Ready, Let's Talk.</h1>
         <div class="container-box">
             <h3 style="margin-bottom: 30px;">Send your request</h3>
-            <form>
+            <form id="contact-form" action="#" method="POST" >
                 <div class="input-row">
                     <div class="input-group">
                         <label for="name">Name</label>
@@ -55,9 +55,49 @@
                 </div>
                 <label for="message">Message</label>
             <textarea  id="message" rows="5" placeholder="Your Message"></textarea>
-            </form>
             <button type="submit">Send</button>
+            </form>
         </div>
     </div>
 
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script>
+
+emailjs.init("I-_TB3cIbGNuA0uJW");
+
+function sendEmail(event){
+
+    event.preventDefault();
+
+    const name=document.getElementById("name").value;
+    const email=document.getElementById("email").value;
+    const message=document.getElementById("message").value;
+    const subject=document.getElementById("subject").value;
+    const phone=document.getElementById("phone").value;
+
+
+    if(!name || !email || !message || !subject){
+        alert("Please fill in all fields");
+        return;
+    }
+    emailjs.send("service_vuqsq0a", "template_6l0328e",{
+        from_name:name,
+        from_email:email,
+        message:message,
+        subject: subject,
+        phone:phone,
+    })
+    .then(function(response){
+        alert("Your Message Was Sent Successfully!");
+        document.getElementById("contact-form").reset();
+    }, function(error){
+        alert("Oops! Something Went Wrong")
+    });
+}
+
+document.getElementById("contact-form").addEventListener("submit", sendEmail);
+</script>
 </body>
