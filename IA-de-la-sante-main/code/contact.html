@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizing Cancer</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="common-styles.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+    <link rel="icon" type="image/x-icon" href="C:\Users\hp\OneDrive\Bureau\htlm othman\pfa\magnifying-glass-solid.svg">
+</head>
+
+<body>  
+    <div id="home">
+        <ul class="menu">
+          <li><h1 id="VisualizingCancer"> Visualizing Cancer   </h1>  </li> 
+          <li class="bar"><a href="index.html"><h3>Home </i></h3></a></li>
+          <li class="bar"><a href="Visualisation.html"><h3>Visualisation </h3></a></li>
+          <li class="bar"><a href="../ML DEPLOY SECOND ATTEMPT/templates/Analyse.html"><h3>Analyse </h3></a></li>
+          <li class="bar"><a href="contact.html"><h3>Contact </h3></a></li>
+        </ul>
+        <div class="hero-title">
+          <h1>
+            Contact Us 
+          </h1>
+          <div class="underline"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>We're Ready, Let's Talk.</h1>
+        <div class="container-box">
+            <h3 style="margin-bottom: 30px;">Send your request</h3>
+            <form id="contact-form" action="#" method="POST" >
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text"  id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone</label>
+                        <input type="text"  id="phone" placeholder="Enter your phone">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="text"  id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input type="text"  id="subject" placeholder="Enter your subject">
+                    </div>
+                </div>
+                <label for="message">Message</label>
+            <textarea  id="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<script>
+
+emailjs.init("I-_TB3cIbGNuA0uJW");
+
+function sendEmail(event){
+
+    event.preventDefault();
+
+    const name=document.getElementById("name").value;
+    const email=document.getElementById("email").value;
+    const message=document.getElementById("message").value;
+    const subject=document.getElementById("subject").value;
+    const phone=document.getElementById("phone").value;
+
+
+    if(!name || !email || !message || !subject){
+        alert("Please fill in all fields");
+        return;
+    }
+    emailjs.send("service_vuqsq0a", "template_6l0328e",{
+        from_name:name,
+        from_email:email,
+        message:message,
+        subject: subject,
+        phone:phone,
+    })
+    .then(function(response){
+        alert("Your Message Was Sent Successfully!");
+        document.getElementById("contact-form").reset();
+    }, function(error){
+        alert("Oops! Something Went Wrong")
+    });
+}
+
+document.getElementById("contact-form").addEventListener("submit", sendEmail);
+</script>
+</body>

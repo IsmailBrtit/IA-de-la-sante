@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizing Cancer</title>
+    <link rel="stylesheet" href="Visualisation.css">
+    <link rel="stylesheet" href="common-styles.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="script.js"></script>
+    <script src="visualisation.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  />
+    <link rel="icon" type="image/x-icon" href="C:\Users\hp\OneDrive\Bureau\htlm othman\pfa\magnifying-glass-solid.svg">
+</head>
+
+<body>  
+  <div id="home">
+      <ul class="menu">
+        <li><h1 id="VisualizingCancer"> Visualizing Cancer   </h1>  </li> 
+        <li class="bar"><a href="index.html"><h3>Home </h3></a></li>
+        <li class="bar"><a href="Visualisation.html"><h3>Visualisation </h3></a></li>
+        <li class="bar"><a href="../ML DEPLOY SECOND ATTEMPT/templates/Analyse.html"><h3>Analyse </h3></a></li>
+        <li class="bar"><a href="contact.html"><h3>Contact </h3></a></li>
+      </ul>
+      <div class="hero-title">
+        <h1>
+          VISUALISATION 
+        </h1>
+        <div class="underline"></div>
+        <h3 class="under-hero-title">
+           Healthcare with Data Visualization
+        </h3> 
+      </div>
+  </div>
+
+  <div class="inline-block">
+      <h3>Introduction</h3>
+      <div class="underline"></div>
+      <p>
+        Welcome to our Visualisation Gallery!
+        Explore captivating images that offer insights into cancer research and healthcare. <br>
+         Click on any image to learn more.
+      </p>
+  </div>
+
+  <!-- Visualization Charts and Descriptions -->
+  <div class="chart-row">
+      <div class="chart-container">
+          <div id="scatterPlot1" class="chart"></div>
+          <div class="chart-description">
+              <p>This scatter plot shows the relationship between the mean radius and mean texture of the tumors.</p>
+          </div>
+      </div>
+  </div>
+  <div class="chart-row">
+      <div class="chart-container">
+          <div id="scatterPlot2" class="chart"></div>
+          <div class="chart-description">
+              <p>This scatter plot illustrates the relationship between the mean radius and mean perimeter of the tumors.</p>
+          </div>
+      </div>
+  </div>
+  <div class="chart-row">
+      <div class="chart-container">
+          <div id="scatterPlot3" class="chart"></div>
+          <div class="chart-description">
+              <p>This scatter plot shows the relationship between the mean texture and mean perimeter of the tumors.</p>
+          </div>
+      </div>
+  </div>
+  <div class="chart-row">
+      <div class="chart-container">
+          <div id="densityPlot1" class="chart"></div>
+          <div class="chart-description">
+              <p>This density plot visualizes the distribution of the mean area of the tumors for benign and malignant cases.</p>
+          </div>
+      </div>
+  </div>
+  <div class="chart-row">
+      <div class="chart-container">
+          <div id="densityPlot2" class="chart"></div>
+          <div class="chart-description">
+              <p>This density plot visualizes the distribution of the mean smoothness of the tumors for benign and malignant cases.</p>
+          </div>
+      </div>
+  </div>
+  <div class="chart-row">
+      <div class="chart-container">
+          <div id="barChart" class="chart"></div>
+          <div class="chart-description">
+              <p>This bar chart shows the count of benign and malignant tumor diagnoses.</p>
+          </div>
+      </div>
+  </div>
+</body>
+</html>

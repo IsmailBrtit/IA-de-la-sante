@@ -1,0 +1,73 @@
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65)), url('../img/gty_231012_medical_records_database_800x450.avif');
+   
+  }
+   
+.underline{
+      margin: 10px auto; 
+  
+}
+.container{
+    width: 80%;
+    margin: 80px auto;
+    font-family:"Poppins",Sans-serif ;
+}
+.container h1{
+    margin-bottom: 20px;
+}
+.container-box{
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+.container-box h3{
+    margin-bottom: 20px;
+}
+.container-box .input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 89%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 9px;
+    margin-bottom: 23px;
+    margin-top: 7px;
+
+}
+textarea{
+    width: 100%;
+    border: 1px  solid #ccc;
+    outline: none;
+    padding: 10px;
+    width: 93.5%;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: rgb(242, 2, 2 ) ;
+    font-family:"Poppins",Sans-serif ;
+
+}
+button{
+  background-color:#F32144;
+  border-radius: 15px;
+  border: white;
+  height: 35px;
+  width: 150px;
+  color: white  ;
+  font-family:"Roboto",Sans-serif ;
+  font-size:100%;
+  font-weight: 270;
+  cursor: pointer;
+  margin-top: 20px;
+ 
+}
+button:hover{
+    background-color:#ca1937 ;
+}
